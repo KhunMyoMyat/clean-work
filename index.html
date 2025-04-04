@@ -57,7 +57,7 @@
     <!-- nav -->
     <nav
       class="navbar navbar-expand-lg p-4 position-absolute bg-transparent"
-      style="z-index: 9; top: 40px; left: 0px; right: 0px"
+      style="z-index: 15; top: 40px; left: 0px; right: 0px"
     >
       <div class="container container-fluid">
         <a class="navbar-brand fs-3 text-white" href="#">Clean Work</a>
@@ -116,21 +116,29 @@
     </nav>
 
     <!-- home -->
-
     <div
       id="carouselExampleInterval"
-      class="carousel slide carousel-fade"
+      class="carousel slide carousel-fade position-relative"
       data-bs-ride="carousel"
     >
-      <div class="carousel-inner">
+      <!-- carousel -->
+      <div class="carousel-inner position-relative">
         <div class="carousel-item active" data-bs-interval="2000">
+          <!-- overlay -->
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100"
+            style="background-color: rgba(95, 204, 244, 0.444); z-index: 10"
+          ></div>
+
           <img
             src="img/home1.jpg"
             class="d-block w-100"
             style="height: 700px; object-fit: cover"
             alt="..."
           />
-          <div class="carousel-caption" style="top: 200px">
+
+          <!-- carousel caption -->
+          <div class="carousel-caption" style="top: 200px; z-index: 20">
             <h1 class="fw-bold" style="font-size: 4rem">We clean your House</h1>
             <div
               class="d-flex gap-3 mt-4 justify-content-center align-items-center flex-column flex-md-row"
@@ -147,13 +155,21 @@
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
+          <!-- overlay -->
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100"
+            style="background-color: rgba(95, 204, 244, 0.444); z-index: 10"
+          ></div>
+
           <img
             src="img/home2.jpg"
             class="d-block w-100"
             style="height: 700px; object-fit: cover"
             alt="..."
           />
-          <div class="carousel-caption" style="top: 200px">
+
+          <!-- carousel caption -->
+          <div class="carousel-caption" style="top: 200px; z-index: 20">
             <h1 class="fw-bold" style="font-size: 4rem">We clean your House</h1>
             <div
               class="d-flex gap-3 mt-4 justify-content-center align-items-center flex-column flex-md-row"
