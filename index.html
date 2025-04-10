@@ -504,39 +504,52 @@
     </section>
 
     <!-- happy customers -->
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-12">
-            <h1>Happy Customers</h1>
+    <section
+      style="
+        background: linear-gradient(
+            rgb(13, 202, 230),
+            rgba(95, 204, 250, 0.444)
+          ),
+          url(./img/home2.jpg) no-repeat center center/cover;
+      "
+    >
+      <div class="container py-5">
+        <div class="row gap-0">
+          <div class="col-12 col-12 py-4">
+            <h1 class="text-center text-white fw-bold" style="font-size: 4rem">
+              Happy Customers
+            </h1>
           </div>
 
           <!-- customer review card -->
-          <div class="col-12 col-lg-4">
-            <div>
-              <!-- customer img & name -->
-              <div>
-                <img src="img/happy-customer-01.jpg" alt="" />
+          <div class="col-12 col-lg-4 bg-info-subtle p-4 rounded-4">
+            <!-- customer img & name -->
+            <div class="d-flex mb-3 align-items-center">
+              <img
+                src="img/happy-customer-01.jpg"
+                alt=""
+                class="me-3 object-fit-cover rounded-circle"
+                style="width: 60px; height: 60px"
+              />
 
-                <div>
-                  <h3>Customer Name</h3>
-                  <div>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-                  </div>
+              <div>
+                <h3 class="fw-medium">Nana</h3>
+                <div class="text-info">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
                 </div>
               </div>
+            </div>
 
-              <!-- customer content -->
-              <div>
-                <p>
-                  Best Cleaning Service Provider Ipsum dolor sit consectetur
-                  kengan
-                </p>
-              </div>
+            <!-- customer content -->
+            <div>
+              <p class="text-body-secondary fs-5 m-0">
+                Best Cleaning Service Provider Ipsum dolor sit consectetur
+                kengan
+              </p>
             </div>
           </div>
         </div>
